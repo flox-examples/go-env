@@ -1,0 +1,19 @@
+[inputs]
+pkgs = {}
+
+[stdenv.mkDerivation]
+name = "env"
+shellHook = '''
+    echo Welcome to Go Gin-Gonic Development Environment
+'''
+tools = [
+    "openssl",
+    "zip",
+    "unzip",
+    "sqlite",
+    "go",
+    "alejandra"
+
+    # Custom packages
+    #"gin",
+  ]
