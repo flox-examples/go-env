@@ -8,7 +8,7 @@ buildGo118Module rec {
   version = "0.0.1";
   # In 'nix develop', we don't need a copy of the source tree
   # in the Nix store.
-  src = ./ugin;
+  src = ../../ugin;
 
   # This hash locks the dependencies of this package. It is
   # necessary because of how Go requires network access to resolve
